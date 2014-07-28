@@ -20,7 +20,6 @@
 
 @implementation AppDelegate
 
-//
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// Configure CCFileUtils to work with SpriteBuilder
