@@ -199,9 +199,15 @@
 		47D487B819870F52006D83D7 /* ChipmunkSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D487B719870F52006D83D7 /* ChipmunkSpace.m */; };
 		47D487BA19870F52006D83D7 /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47D487B919870F52006D83D7 /* LICENSE_Chipmunk.txt */; };
 		47D487BE19870F52006D83D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D487BD19870F52006D83D7 /* main.m */; };
-		47D487C219870F52006D83D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C119870F52006D83D7 /* AppDelegate.m */; };
-		47D487C519870F52006D83D7 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C419870F52006D83D7 /* HelloWorldScene.m */; };
-		47D487C819870F52006D83D7 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C719870F52006D83D7 /* IntroScene.m */; };
+		47D487C219870F52006D83D7 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C119870F52006D83D7 /* AppDelegate.mm */; };
+		47D487C519870F52006D83D7 /* HelloWorldScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C419870F52006D83D7 /* HelloWorldScene.mm */; };
+		47D487C819870F52006D83D7 /* IntroScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487C719870F52006D83D7 /* IntroScene.mm */; };
+		47D487D519870F75006D83D7 /* MenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487D219870F75006D83D7 /* MenuViewController.mm */; };
+		47D487D619870F75006D83D7 /* SceneViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487D419870F75006D83D7 /* SceneViewController.mm */; };
+		47D487D919870F85006D83D7 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D487D719870F85006D83D7 /* Storyboard-iPad.storyboard */; };
+		47D487DA19870F85006D83D7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D487D819870F85006D83D7 /* Storyboard.storyboard */; };
+		47D487DC19870F8B006D83D7 /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 47D487DB19870F8B006D83D7 /* Published-iOS */; };
+		47D487DF19870FC5006D83D7 /* CocosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D487DE19870FC5006D83D7 /* CocosViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -608,11 +614,20 @@
 		47D487BC19870F52006D83D7 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = "Supporting Files/Prefix.pch"; sourceTree = "<group>"; };
 		47D487BD19870F52006D83D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		47D487C019870F52006D83D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		47D487C119870F52006D83D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		47D487C119870F52006D83D7 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
 		47D487C319870F52006D83D7 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		47D487C419870F52006D83D7 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
+		47D487C419870F52006D83D7 /* HelloWorldScene.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloWorldScene.mm; path = Classes/HelloWorldScene.mm; sourceTree = "<group>"; };
 		47D487C619870F52006D83D7 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
-		47D487C719870F52006D83D7 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		47D487C719870F52006D83D7 /* IntroScene.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = IntroScene.mm; path = Classes/IntroScene.mm; sourceTree = "<group>"; };
+		47D487D119870F75006D83D7 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Classes/MenuViewController.h; sourceTree = "<group>"; };
+		47D487D219870F75006D83D7 /* MenuViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MenuViewController.mm; path = Classes/MenuViewController.mm; sourceTree = "<group>"; };
+		47D487D319870F75006D83D7 /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneViewController.h; path = Classes/SceneViewController.h; sourceTree = "<group>"; };
+		47D487D419870F75006D83D7 /* SceneViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SceneViewController.mm; path = Classes/SceneViewController.mm; sourceTree = "<group>"; };
+		47D487D719870F85006D83D7 /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Storyboard-iPad.storyboard"; path = "Resources/Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
+		47D487D819870F85006D83D7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Resources/Storyboard.storyboard; sourceTree = "<group>"; };
+		47D487DB19870F8B006D83D7 /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Published-iOS"; path = "Resources/Published-iOS"; sourceTree = "<group>"; };
+		47D487DD19870FC5006D83D7 /* CocosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosViewController.h; path = Classes/CocosViewController.h; sourceTree = "<group>"; };
+		47D487DE19870FC5006D83D7 /* CocosViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CocosViewController.mm; path = Classes/CocosViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -686,6 +701,9 @@
 		47D4856119870F50006D83D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				47D487DB19870F8B006D83D7 /* Published-iOS */,
+				47D487D719870F85006D83D7 /* Storyboard-iPad.storyboard */,
+				47D487D819870F85006D83D7 /* Storyboard.storyboard */,
 				47D4856219870F50006D83D7 /* Default.png */,
 				47D4856419870F50006D83D7 /* Default@2x.png */,
 				47D4856619870F50006D83D7 /* Default-568h@2x.png */,
@@ -1424,11 +1442,17 @@
 			isa = PBXGroup;
 			children = (
 				47D487C019870F52006D83D7 /* AppDelegate.h */,
-				47D487C119870F52006D83D7 /* AppDelegate.m */,
+				47D487C119870F52006D83D7 /* AppDelegate.mm */,
+				47D487DD19870FC5006D83D7 /* CocosViewController.h */,
+				47D487DE19870FC5006D83D7 /* CocosViewController.mm */,
 				47D487C319870F52006D83D7 /* HelloWorldScene.h */,
-				47D487C419870F52006D83D7 /* HelloWorldScene.m */,
+				47D487C419870F52006D83D7 /* HelloWorldScene.mm */,
 				47D487C619870F52006D83D7 /* IntroScene.h */,
-				47D487C719870F52006D83D7 /* IntroScene.m */,
+				47D487C719870F52006D83D7 /* IntroScene.mm */,
+				47D487D119870F75006D83D7 /* MenuViewController.h */,
+				47D487D219870F75006D83D7 /* MenuViewController.mm */,
+				47D487D319870F75006D83D7 /* SceneViewController.h */,
+				47D487D419870F75006D83D7 /* SceneViewController.mm */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1506,16 +1530,19 @@
 				47D4856E19870F50006D83D7 /* Icon@2x.png in Resources */,
 				47D4858019870F50006D83D7 /* Icon-Small@2x.png in Resources */,
 				47D4857219870F50006D83D7 /* Icon-72@2x.png in Resources */,
+				47D487DA19870F85006D83D7 /* Storyboard.storyboard in Resources */,
 				47D4856319870F50006D83D7 /* Default.png in Resources */,
 				47D4856C19870F50006D83D7 /* Icon.png in Resources */,
 				47D4857A19870F50006D83D7 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				47D4856919870F50006D83D7 /* Default-Landscape~ipad.png in Resources */,
 				47D4857E19870F50006D83D7 /* Icon-Small.png in Resources */,
 				47D4857C19870F50006D83D7 /* Icon-Small-50.png in Resources */,
+				47D487D919870F85006D83D7 /* Storyboard-iPad.storyboard in Resources */,
 				47D487BA19870F52006D83D7 /* LICENSE_Chipmunk.txt in Resources */,
 				47D4857019870F50006D83D7 /* Icon-72.png in Resources */,
 				47D4874C19870F52006D83D7 /* LICENSE_CCBReader.txt in Resources */,
 				47D486BC19870F51006D83D7 /* LICENSE_cocos2d.txt in Resources */,
+				47D487DC19870F8B006D83D7 /* Published-iOS in Resources */,
 				47D4856719870F50006D83D7 /* Default-568h@2x.png in Resources */,
 				47D4858719870F50006D83D7 /* iTunesArtwork in Resources */,
 				47D4858219870F50006D83D7 /* Icon-Spotlight-iOS7.png in Resources */,
@@ -1555,7 +1582,7 @@
 				47D4859B19870F50006D83D7 /* CCEffect.m in Sources */,
 				47D4873919870F52006D83D7 /* CCBAnimationManager.m in Sources */,
 				47D486A719870F51006D83D7 /* CCVertex.m in Sources */,
-				47D487C519870F52006D83D7 /* HelloWorldScene.m in Sources */,
+				47D487C519870F52006D83D7 /* HelloWorldScene.mm in Sources */,
 				47D485DB19870F50006D83D7 /* CCAnimationCache.m in Sources */,
 				47D4869519870F51006D83D7 /* base64.c in Sources */,
 				47D4861E19870F51006D83D7 /* CCParticleSystemBase.m in Sources */,
@@ -1574,6 +1601,7 @@
 				47D4869319870F51006D83D7 /* NSEvent+CC.m in Sources */,
 				47D486EA19870F51006D83D7 /* ALDevice.m in Sources */,
 				47D486B019870F51006D83D7 /* NSThread+performBlock.m in Sources */,
+				47D487D519870F75006D83D7 /* MenuViewController.mm in Sources */,
 				47D4864D19870F51006D83D7 /* CCSpriteBatchNode.m in Sources */,
 				47D4859D19870F50006D83D7 /* CCEffectBrightness.m in Sources */,
 				47D486D219870F51006D83D7 /* OALAudioTrackNotifications.m in Sources */,
@@ -1592,6 +1620,7 @@
 				47D4863019870F51006D83D7 /* CCProgressNode.m in Sources */,
 				47D4863C19870F51006D83D7 /* CCResponderManager.m in Sources */,
 				47D4866E19870F51006D83D7 /* CCTransition.m in Sources */,
+				47D487D619870F75006D83D7 /* SceneViewController.mm in Sources */,
 				47D486C519870F51006D83D7 /* OALActionManager.m in Sources */,
 				47D4862919870F51006D83D7 /* CCPhysicsNode.m in Sources */,
 				47D486CB19870F51006D83D7 /* OALUtilityActions.m in Sources */,
@@ -1615,6 +1644,7 @@
 				47D4871719870F52006D83D7 /* OALTools.m in Sources */,
 				47D4867219870F51006D83D7 /* cocos2d.m in Sources */,
 				47D4864A19870F51006D83D7 /* CCSprite9Slice.m in Sources */,
+				47D487DF19870FC5006D83D7 /* CocosViewController.mm in Sources */,
 				47D4868A19870F51006D83D7 /* CCDirectorMac.m in Sources */,
 				47D4872019870F52006D83D7 /* CCControl.m in Sources */,
 				47D4861A19870F51006D83D7 /* CCParticleSystem.m in Sources */,
@@ -1655,12 +1685,12 @@
 				47D485D819870F50006D83D7 /* CCAnimation.m in Sources */,
 				47D4872419870F52006D83D7 /* CCControlTextureFactory.m in Sources */,
 				47D486C819870F51006D83D7 /* OALAudioActions.m in Sources */,
-				47D487C219870F52006D83D7 /* AppDelegate.m in Sources */,
+				47D487C219870F52006D83D7 /* AppDelegate.mm in Sources */,
 				47D4867919870F51006D83D7 /* CCDirectorIOS.m in Sources */,
 				47D4861319870F51006D83D7 /* CCParticleBatchNode.m in Sources */,
 				47D486AD19870F51006D83D7 /* NSAttributedString+CCAdditions.m in Sources */,
 				47D487BE19870F52006D83D7 /* main.m in Sources */,
-				47D487C819870F52006D83D7 /* IntroScene.m in Sources */,
+				47D487C819870F52006D83D7 /* IntroScene.mm in Sources */,
 				47D485AB19870F50006D83D7 /* CCEffectStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

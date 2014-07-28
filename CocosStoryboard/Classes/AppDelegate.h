@@ -7,7 +7,10 @@
 //
 // -----------------------------------------------------------------------
 
-#import "cocos2d.h"
+#import <UIKit/UIKit.h>
 
-@interface AppDelegate : CCAppDelegate
+@interface AppDelegate : NSObject < UIApplicationDelegate >
+
+@property (nonatomic, strong) UIWindow*											window;
+
 @end
