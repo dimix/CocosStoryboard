@@ -1889,6 +1889,7 @@
 				47D487CD19870F52006D83D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D487CE19870F52006D83D7 /* Build configuration list for PBXNativeTarget "CocosStoryboard" */ = {
 			isa = XCConfigurationList;
@@ -1897,6 +1898,7 @@
 				47D487D019870F52006D83D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
