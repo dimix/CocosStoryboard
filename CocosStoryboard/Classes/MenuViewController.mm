@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "CocosViewController.h"
+#import "SceneViewController.h"
 
 @interface MenuViewController ()
 
@@ -31,7 +31,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	CocosViewController* controller = (CocosViewController*)segue.destinationViewController;
+	SceneViewController* controller = (SceneViewController*)segue.destinationViewController;
 	
 	// Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
@@ -48,7 +48,10 @@
         [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenScaledAspectFitEmulationMode];
 #endif
     
+	UIButton* button = (UIButton*)sender;
+	
 	controller.ccConfig = cocos2dSetup;
+	controller.sceneType = static_cast<SceneType>(button.tag);
 	
 	[self.navigationController setNavigationBarHidden:YES animated:NO];
 }

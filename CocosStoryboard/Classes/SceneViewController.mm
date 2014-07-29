@@ -39,9 +39,7 @@
 
 - (CCScene *)cocosViewControllerSceneToRun:(CocosViewController *)cocosViewController
 {
-	NSInteger rand = arc4random() % 100;
-	
-	if (rand > 50)
+	if (self.sceneType == kSceneType_SpriteBuilder)
 	{
 		return [CCBReader loadAsScene:@"MainScenePhone"];
 	}

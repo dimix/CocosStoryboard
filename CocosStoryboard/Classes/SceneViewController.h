@@ -8,6 +8,14 @@
 
 #import "CocosViewController.h"
 
+enum SceneType
+{
+	kSceneType_Demo,
+	kSceneType_SpriteBuilder
+};
+
 @interface SceneViewController : CocosViewController
+
+@property (nonatomic, readwrite) SceneType										sceneType;
 
 @end
