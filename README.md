@@ -20,7 +20,7 @@ CocosStoryboard helps you in this case, allowing you to create an hybrid project
 4. Use CocosViewControllerDelegate method (-cocosViewControllerSceneToRun:) of CocosViewController to load the main scene.
 5. Build and Run!
 
-You can inspirate by watching the CocosStoryboard project file: AppDelegate, MenuViewController and SceneViewController.
+You can inspirate by watching the CocosStoryboard project files: AppDelegate, MenuViewController and SceneViewController.
 
 ####Remember
 
