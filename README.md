@@ -28,7 +28,7 @@ CCDirector is a singleton, when Cocos2D view controller will be popped CCDirecto
 
 ##Compatibility
 
-This project is build with Cocos2d v3.1 but is compatible with v3.2 beta.
+This project contains Cocos2d v3.1 files but is compatible with v3.2 beta.
 
 ##Screenshots
 
