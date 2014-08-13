@@ -24,7 +24,7 @@ You can inspirate by watching the CocosStoryboard project files: AppDelegate, Me
 
 ####Remember
 
-CCDirector is a singleton, when Cocos2D view controller will be popped CCDirector is paused and not removed, so the memory is still used and retained. When you re-instantiate CocosViewController, CCDirector will represent the old scene, so you need to use CocosViewControllerDelegate methos to update the scene with the correct one.
+CCDirector is a singleton, when Cocos2D view controller will be popped CCDirector is paused and not removed, so the memory is still used and retained. When you re-instantiate CocosViewController, CCDirector will represent the old scene, so you need to use CocosViewControllerDelegate method to update the scene with the correct one.
 
 ##Compatibility
 
