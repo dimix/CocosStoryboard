@@ -13,7 +13,7 @@ CocosStoryboard helps you in this case, allowing you to create an hybrid project
 ##How do I use CocosStoryboard?
 
 1. Start with a new project from SpriteBuilder or XCode Cocos2d Template.
-2. replace AppDelegate of CocosStoryboard project with yours.
+2. Replace AppDelegate of CocosStoryboard project with yours.
 3. Copy CocosViewController.h/.mm in your project folder and add it to the project.
 4. Subclass CocosViewController, for example as SceneViewController.
 5. Use CocosViewControllerDelegate method (-cocosViewControllerSceneToRun:) of CocosViewController in the SceneViewController to load the main scene.
