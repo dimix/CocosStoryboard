@@ -27,10 +27,16 @@
 - (void)																		removeDirector;
 
 /*! You can provide a Cocos2D configuration Dictionary.
- *	Set this property before load the controller view.
+ *	Set this property before load the controller view and after set .useSpriteBuilderConfig to NO.
+ *	Otherwise will be ignored.
  *	This method is used in -viewDidLayoutSubviews.
  */
 @property (nonatomic, strong) NSDictionary*										ccConfig;
+
+/*! Tells to the controller if use default Spritebuilder configuration or not.
+ *	Default is YES.
+ */
+@property (nonatomic, readwrite) BOOL											useSpriteBuilderConfig;
 
 @end
 

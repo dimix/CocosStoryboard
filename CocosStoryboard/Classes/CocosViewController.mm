@@ -61,6 +61,15 @@ FindPOTScale(CGFloat size, CGFloat fixedSize)
 
 @implementation CocosViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	if ((self = [super initWithCoder:aDecoder]))
+	{
+		self.useSpriteBuilderConfig = YES;
+	}
+	return self;
+}
+
 - (void)viewDidLayoutSubviews
 {
 	[super viewDidLayoutSubviews];
@@ -139,6 +148,26 @@ FindPOTScale(CGFloat size, CGFloat fixedSize)
 
 - (void)startDirector
 {
+	if (self.useSpriteBuilderConfig)
+	{
+		// Configure Cocos2d with the options set in SpriteBuilder
+		NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
+		configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
+		
+		NSMutableDictionary* cocos2dSetup = [NSMutableDictionary dictionaryWithContentsOfFile:configPath];
+		
+		// Note: this needs to happen before configureCCFileUtils is called, because we need apportable to correctly setup the screen scale factor.
+		
+#ifdef APPORTABLE
+		if([cocos2dSetup[CCSetupScreenMode] isEqual:CCScreenModeFixed])
+			[UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenAspectFitEmulationMode];
+		else
+			[UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenScaledAspectFitEmulationMode];
+#endif
+		
+		self.ccConfig = cocos2dSetup;
+	}
+	
 	[self tryToSetupCocos2dWithOptions:self.ccConfig];
 	
 	if (!self.directorIsInitialized)
