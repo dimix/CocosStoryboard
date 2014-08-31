@@ -20,11 +20,11 @@ CocosStoryboard helps you in this case, allowing you to create an hybrid project
 4. Use CocosViewControllerDelegate method (-cocosViewControllerSceneToRun:) of CocosViewController to load the main scene.
 5. Build and Run!
 
-You can inspirate by watching the CocosStoryboard project file: AppDelegate, MenuViewController and SceneViewController.
+You can inspirate by watching the CocosStoryboard project files: AppDelegate, MenuViewController and SceneViewController.
 
 ####Remember
 
-CCDirector is a singleton, when Cocos2D view controller will be popped CCDirector is paused and not removed, so the memory is still used and retained. When you re-instantiate CocosViewController, CCDirector will represent the old scene, so you need to use CocosViewControllerDelegate methos to update the scene with the correct one.
+CCDirector is a singleton, when Cocos2D view controller will be popped CCDirector is paused and not removed, so the memory is still used and retained. When you re-instantiate CocosViewController, CCDirector will represent the old scene, so you need to use CocosViewControllerDelegate method to update the scene with the correct one.
 
 ##Compatibility
 
