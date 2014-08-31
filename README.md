@@ -12,13 +12,14 @@ CocosStoryboard helps you in this case, allowing you to create an hybrid project
 
 ##How do I use CocosStoryboard?
 
-1. Prepare the project to use Storyboards (remove cocos2d loading from AppDelegate, create UIWindow property in AppDelegate etc..)
-1. Copy CocosViewController.h/.mm in your project.
-2. In App Delegate call: [CCBReader configureCCFileUtils];
-2. Subclass CocosViewController, for example as SceneViewController.
-3. Add a Storyboard to your project and add the Controllers that you want and add the SceneViewController with the Segue that you want.
-4. Use CocosViewControllerDelegate method (-cocosViewControllerSceneToRun:) of CocosViewController to load the main scene.
-5. Build and Run!
+1. Start with a new project from SpriteBuilder or XCode Cocos2d Template.
+2. replace AppDelegate of CocosStoryboard project with yours.
+3. Copy CocosViewController.h/.mm in your project folder and add it to the project.
+4. Subclass CocosViewController, for example as SceneViewController.
+5. Use CocosViewControllerDelegate method (-cocosViewControllerSceneToRun:) of CocosViewController in the SceneViewController to load the main scene.
+6. Add a Storyboard to your project and add the Controllers that you want, for example a ViewController for the menu and then the SceneViewController.
+7. Connect the controllers in the Storyboards.
+8. Build and Run!
 
 You can inspirate by watching the CocosStoryboard project files: AppDelegate, MenuViewController and SceneViewController.
 
