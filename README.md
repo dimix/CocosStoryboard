@@ -23,6 +23,8 @@ CocosStoryboard helps you in this case, allowing you to create an hybrid project
 
 You can inspirate by watching the CocosStoryboard project files: AppDelegate, MenuViewController and SceneViewController.
 
+You can also follow a tutorial on my personal blog: http://www.dimitrigiani.it/2014/09/01/cocosviewcontroller-how-to-use-storyboards-and-cocos2d-v3/
+
 ####Remember
 
 CCDirector is a singleton, when Cocos2D view controller will be popped CCDirector is paused and not removed, so the memory is still used and retained. When you re-instantiate CocosViewController, CCDirector will represent the old scene, so you need to use CocosViewControllerDelegate method to update the scene with the correct one.
